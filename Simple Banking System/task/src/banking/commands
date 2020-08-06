@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS card(
+    id INTEGER,
+    number TEXT,
+    pin TEXT,
+    balance INTEGER DEFAULT 0);
+
+
+
+
+Update card SET balance = balance + 1000;
+
+Update card SET balance = balance + 1000 WHERE number = 4000000002111153; //++++
+
+select number from card  order by id desc limit 0,1; // выбор макс акка
+
+delete from card where number = 4000000002111351; delete
+
+select id from card where number = 4000000002111153; //check card and get id
